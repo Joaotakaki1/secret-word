@@ -91,7 +91,7 @@ function App() {
     <div className="App" >
       {gameStage === "start" && <StartScreen startGame={startGame} />}
       {gameStage === "game" && <Game word={pickWord} categorie={categorie} verifyLetter={verifyLetter} letters={letters} guessedLetters={guessedLetters} wrongLetters={wrongLetters} score={score} guesses={guesses} />}
-      {gameStage === "end" && <GameOver retry={retry} score={score} />}
+      {gameStage === "end" && <GameOver retry={retry} score={score} word={letters} />}
     </div>
   )
 }
